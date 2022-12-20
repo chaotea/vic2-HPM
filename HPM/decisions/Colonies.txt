@@ -537,6 +537,18 @@ political_decisions = {
                     NOT = { province_id = 1637 }
                     NOT = { has_province_modifier = plantation }
                 }
+                any_owned_province = {
+                    is_core = DAI
+                    NOT = { has_province_modifier = plantation }
+                }
+                any_owned_province = {
+                    is_core = CAM
+                    NOT = { has_province_modifier = plantation }
+                }
+                any_owned_province = {
+                    is_core = LXA
+                    NOT = { has_province_modifier = plantation }
+                }
             }
             year = 1870
         }
@@ -643,6 +655,27 @@ political_decisions = {
                     NOT = { terrain = semidesert }
                     NOT = { terrain = dryhills }
                     NOT = { province_id = 1637 }
+                }
+                add_province_modifier = { name = plantation duration = -1 }
+            }
+            any_owned = {
+                limit = {
+                    NOT = { has_province_modifier = plantation }
+                    is_core = DAI
+                }
+                add_province_modifier = { name = plantation duration = -1 }
+            }
+            any_owned = {
+                limit = {
+                    NOT = { has_province_modifier = plantation }
+                    is_core = CAM
+                }
+                add_province_modifier = { name = plantation duration = -1 }
+            }
+            any_owned = {
+                limit = {
+                    NOT = { has_province_modifier = plantation }
+                    is_core = LXA
                 }
                 add_province_modifier = { name = plantation duration = -1 }
             }
