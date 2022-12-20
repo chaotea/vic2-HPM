@@ -397,4 +397,36 @@ political_decisions = {
 
         ai_will_do = { factor = 1 }
     }
+
+    portuguese_trade_goods = {
+        potential = {
+            ai = no
+            tag = POR
+            NOT = { has_country_flag = portuguese_trade_goods }
+        }
+
+        allow = {
+            state_n_government = 1
+        }
+
+        effect = {
+            set_country_flag = portuguese_trade_goods
+
+            # Douro
+            518 = { trade_goods = coal }
+            519 = { trade_goods = coal }
+            520 = { trade_goods = iron }
+            
+            # Abrantes
+            523 = { trade_goods = cattle }
+
+            # Evora
+            525 = { trade_goods = coal }
+
+            # Macaronesia
+            2134 = { trade_goods = fish }
+            2135 = { trade_goods = fish }
+            2136 = { trade_goods = fish }
+        }
+    }
 }
